@@ -6,6 +6,7 @@ if number < 0:
     print(negative)
 elif number == 0:
     zero  = '%d is zero' %(number)
+    print(zero)
 elif number > 0:
     positive = "%d is positive" %(number)
     print(positive)
