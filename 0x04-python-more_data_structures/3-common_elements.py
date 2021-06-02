@@ -9,10 +9,7 @@ def common_elements(set_1, set_2):
         sorted_set.append(i)
     for j in set_2:
         sorted_set.append(j)
-    print(sorted_set)
-
     sorted_set.sort()
-    print(sorted_set)
 
     k = len(sorted_set)
     while k >= 0:
