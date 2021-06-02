@@ -3,18 +3,4 @@
 
 
 def common_elements(set_1, set_2):
-    sorted_set = []
-    od_set = []
-    for i in set_1:
-        sorted_set.append(i)
-    for j in set_2:
-        sorted_set.append(j)
-    sorted_set.sort()
-
-    k = len(sorted_set)
-    while k >= 0:
-        k -= 1
-        if sorted_set[k] == sorted_set[k-1]:
-            pass
-            od_set.append(sorted_set[k])
-        return set(od_set)
+    return set_1.intersection(set_2)
