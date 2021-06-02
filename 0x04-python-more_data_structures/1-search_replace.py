@@ -7,5 +7,6 @@ def search_replace(my_list, search, replace):
             new_list.append(my_List[i])
         else:
             new_list.append(replace)
+        i += 1
     return new_list
 
