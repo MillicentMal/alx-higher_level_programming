@@ -2,6 +2,7 @@
 
 # only sums up the unique characters of a list
 
+
 def uniq_add(my_list=[]):
     uniq_list = list(set(my_list))
     result = 0
