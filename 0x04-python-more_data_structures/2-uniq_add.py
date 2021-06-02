@@ -8,4 +8,4 @@ def uniq_add(my_list=[]):
     result = 0
     for i in range(0, len(uniq_list)):
         result += uniq_list[i]
-    return result                              
+    return result
