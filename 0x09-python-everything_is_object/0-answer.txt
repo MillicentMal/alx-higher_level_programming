@@ -1,1 +1,1 @@
-isinstanceisinstance
+isinstance
