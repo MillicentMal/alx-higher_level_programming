@@ -4,8 +4,7 @@ def safe_print_list(my_list=[], x=0):
     i = 0
     for element in range(x):
         try:    
-            if type(element) == int:
-                print("{:d}".format(my_list[element]), end="")
+            print("{:d}".format(my_list[element]), end="")
             i += 1
         except:
             if IndexError:
