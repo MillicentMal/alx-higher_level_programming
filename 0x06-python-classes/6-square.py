@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" class Square that defines a square by:
+"""
+ class Square that defines a square by:
 (based on 5-square.py)
 """
 
@@ -7,7 +8,7 @@
 class Square:
     """Square class with a private attribute -
     size.
-"""
+    """
 
     def __init__(self, size=0, position=(0, 0)):
         """Initializes the size variable as a private
@@ -61,6 +62,9 @@ class Square:
         for i in range(0, self.__position[1]):
             print("")
         for i in range(0, self.size):
-            print(" ", end="") for j in range(0, self.__position[0])
-            print("#", end="") for k in range(0, self.size)
-            print("")
+            for j in range(0, self.__position[0]):
+                print(" ", end="") 
+                for j in range(0, self.__position[0]):
+                    print("#", end="") 
+                    for k in range(0, self.size):
+                        print("")
