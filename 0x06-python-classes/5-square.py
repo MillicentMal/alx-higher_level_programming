@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
  class Square that defines a square by:
-(based on 4-square.py)
 """
 
 
@@ -9,7 +8,6 @@ class Square:
     """Square class with a private attribute -
     size.
  """
-
     def __init__(self, size=0):
         """Initializes the size variable as a private
         instance artribute
