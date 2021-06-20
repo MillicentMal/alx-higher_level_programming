@@ -25,3 +25,4 @@ class Square:
         """
         print("Setting size")
         self.__size = size
+        size = Square(value)
