@@ -18,4 +18,4 @@ class Square:
     def area(self):
         """gives area of Square
     """
-        return pow(self.__size)
+        return pow(self.__size, 2)
