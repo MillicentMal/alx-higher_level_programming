@@ -2,6 +2,7 @@
 """class for a square and does all the things
 """
 
+
 class Square:
     """ Square class
     """
