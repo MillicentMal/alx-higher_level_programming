@@ -3,8 +3,8 @@
 script that prints the first argument passed to it:
 */
 
-if (process.argv.length === 2) {
+if (process.argv.length === 1) {
   console.log('No argument');
-} else if (process.argv.length > 2) {
+} else if (process.argv.length > 1) {
   console.log(process.argv[2]);
 }
