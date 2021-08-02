@@ -1,13 +1,9 @@
 #!/usr/bin/node
-let largest = 0;
-let larger = 0;
-if (process.argv.length < 4) {
+// searches the second biggest integer in the list of arguments.
+
+if (process.argv.length <= 3) {
   console.log(0);
-} 
-else if (process.argv.length > 4 )
-{
-  for (let i = 0; i < process.argv.length; i++) {
-     nums.push(process.argv[i]);
-     }
-     nums.sort(function(a,b) {return a-b});
-  console.log(nums);
+} else {
+  const args = process.argv.map(Number).slice(2).sort((a, b) => a - b).reverse();
+  console.log(args[1]);
+}
