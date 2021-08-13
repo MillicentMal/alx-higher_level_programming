@@ -17,7 +17,4 @@ db="database")
 mycursor = db.cursor()
 
 mycursor.execute("SELECT * FROM states ORDER by id")
-
-myresult = mycursor.fetchall()
-for row in myresult:
-    print(states.id, row )
+db.query(states.id).all()
