@@ -14,7 +14,9 @@ if __name__ == '__main__':
   password="password",
 db="database")
 
-mycursor = db.cursor()
+x = "SELECT * FROM states ORDER by id"
 
-mycursor.execute("SELECT * FROM states ORDER by id")
-db.query(states.id).all()
+mycursor=my_conn.execute(x)
+my_data=mycursor.fetchall()
+for row in my_data:
+    print(row)
