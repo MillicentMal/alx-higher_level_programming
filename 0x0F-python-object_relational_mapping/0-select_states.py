@@ -7,8 +7,15 @@ import MySQLdb
 from sys import argv
 from sqlalchemy import create_engine
 
+""" that lists all states from the database hbtn_0e_0_usa:
+"""
+
 
 if __name__ == '__main__':
+    """ that lists all states from the database hbtn_0e_0_usa:
+    """
+#     engine = create_engine('mysql')
+connection = engine.connect()
     
     user, password, database = argv[1], argv[2], argv[3]
     db = MySQLdb.connect(
