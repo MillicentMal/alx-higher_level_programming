@@ -5,12 +5,11 @@
 class Rectangle:
     """Rectangle class"""
     number_of_instances = 0
-    
+
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
         type(self).number_of_instances += 1
-        
 
     def __str__(self):
         """return string representation of rectangle"""
@@ -20,11 +19,11 @@ class Rectangle:
         for i in range(self.__height - 1):
             rectangle += "#" * self.__width + "\n"
         rectangle += "#" * self.__width
-        
+
         return rectangle
-                                                                                        
+
     @property
-    def width(self): 
+    def width(self):
         return self.__width
 
     @width.setter
@@ -36,8 +35,7 @@ class Rectangle:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
-       
-    
+
     def __repr__(self):
         """
             returns string representation of rectangle
@@ -49,7 +47,7 @@ class Rectangle:
             return rectangle
         rectangle = 'Rectangle({}, {})'.format(self.__width, self.__height)
         return rectangle
-     
+
     def __del__(self):
         """
             prints Bye rectangle... when an instance is
@@ -57,8 +55,3 @@ class Rectangle:
         """
         type(self).number_of_instances -= 1
         print('Bye rectangle...')
-        
-        
-        
-
-  

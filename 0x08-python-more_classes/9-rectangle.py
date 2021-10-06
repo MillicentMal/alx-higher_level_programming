@@ -85,7 +85,7 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        
+
         rectangle = ""
         if self.__width is 0 or self.__height is 0:
             return rectangle
@@ -97,7 +97,7 @@ class Rectangle:
         return rectangle
 
     def __repr__(self):
-       
+
         rectangle = ''
         if self.__width is 0 or self.__height is 0:
             return rectangle
