@@ -32,9 +32,25 @@ class Rectangle:
     def height(self, value):
         """Gets the height"""
         self.__height = value
-
         if not isinstance(value, int):
             raise TypeError("value must be an integer")
         elif value < 0:
             raise ValueError("valu must be >= 0")
+        
+    
+
+    def area(self):
+        return (self.__height * self.__width)
+
+    def perimeter(self):
+        if self.__height == 0 or self.__width == 0:
+            return 0
+        else:
+            return 2*self.__width + 2 * self.__height
+
+
+
+
+
+        
        
