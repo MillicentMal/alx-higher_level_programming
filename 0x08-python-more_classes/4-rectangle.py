@@ -58,6 +58,15 @@ class Rectangle:
             return 0
         else:
             return 2*self.__width + 2 * self.__height
-
-
-
+   
+    def __repr__(self):
+        """
+            returns string representation of rectangle
+            representation able to be recreated into a new instance
+            using eval
+        """
+        rectangle = ''
+        if self.__width is 0 or self.__height is 0:
+            return rectangle
+        rectangle = 'Rectangle({}, {})'.format(self.__width, self.__height)
+        return rectangle
