@@ -9,6 +9,7 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
+        type(self).number_of_instances += 1
         
 
     def __str__(self):
@@ -35,7 +36,7 @@ class Rectangle:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
-        Rectangle.number_of_instances += 1
+       
     
     def __repr__(self):
         """
@@ -54,7 +55,7 @@ class Rectangle:
             prints Bye rectangle... when an instance is
             deleted
         """
-        Rectangle.number_of_instances -= 1
+        type(self).number_of_instances -= 1
         print('Bye rectangle...')
         
         
