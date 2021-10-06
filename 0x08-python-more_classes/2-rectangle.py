@@ -4,6 +4,7 @@
 
 class Rectangle:
     """Rectangle class"""
+
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
@@ -42,11 +43,4 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return 0
         else:
-            return 2*self.__width + 2 * self.__height
-
-
-
-
-
-        
-       
+            return 2 * self.__width + 2 * self.__height
