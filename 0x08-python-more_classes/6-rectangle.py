@@ -33,6 +33,7 @@ class Rectangle:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
+        Rectangle.number_of_instances += 1
     
     def __repr__(self):
         """
@@ -52,6 +53,8 @@ class Rectangle:
             deleted
         """
         print('Bye rectangle...')
+        
+        
         
 
   
