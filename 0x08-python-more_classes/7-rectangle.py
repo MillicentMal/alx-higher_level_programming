@@ -5,6 +5,7 @@
 class Rectangle:
     """Rectangle class"""
     number_of_instances = 0
+    print_symbol = "#"
     
     def __init__(self, width=0, height=0):
         self.__width = width
@@ -12,15 +13,18 @@ class Rectangle:
         type(self).number_of_instances += 1
         
 
-    def __str__(self):
-        """return string representation of rectangle"""
+   def __str__(self):
+        """
+            return string representation of a rectangle
+        """
         rectangle = ""
-        if self.__width == 0 or self.__height == 0:
+        if self.__width is 0 or self.__height is 0:
             return rectangle
+
         for i in range(self.__height - 1):
-            rectangle += "#" * self.__width + "\n"
-        rectangle += "#" * self.__width
-        
+            rectangle += str(self.print_symbol) * self.__width + "\n"
+        rectangle += str(self.print_symbol) * self.__width
+
         return rectangle
                                                                                         
     @property
@@ -55,7 +59,8 @@ class Rectangle:
             prints Bye rectangle... when an instance is
             deleted
         """
-        type(self).number_of_instances -= 1
+        if type(self).number_of_instances > 0:
+            type(self).number_of_instances -= 1
         print('Bye rectangle...')
         
         
