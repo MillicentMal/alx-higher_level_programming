@@ -29,7 +29,7 @@ class Rectangle:
          return self.__height
 
     @height.setter
-    def size(self, size_value):
+    def height(self, value):
         """Gets the height"""
         self.__height = value
 
