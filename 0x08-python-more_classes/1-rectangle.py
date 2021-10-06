@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines an empty class of a rectangle
+"""Defines a class of a rectangle
 """
 
 
@@ -16,12 +16,14 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        if not isinstance(value, int):
-            raise TypeError("value must be an integer")
-        elif value < 0:
-            raise ValueError("value must be >= 0")
-        else:
+        try:
             self.__width = value
+        except:
+            if not isinstance(value, int):
+                raise TypeError("value must be an integer")
+            elif value < 0:
+                raise ValueError("value must be >= 0")
+        
 
     @property
     def height(self):
@@ -29,9 +31,11 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        if not isinstance(value, int):
-            raise TypeError("value must be an integer")
-        elif value < 0:
-            raise ValueError("value must be >= 0")
-        else:
+        try:
             self.__height = value
+        except:
+            if not isinstance(value, int):
+                raise TypeError("value must be an integer")
+            elif value < 0:
+                raise ValueError("value must be >= 0")
+       
