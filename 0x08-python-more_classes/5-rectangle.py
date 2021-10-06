@@ -33,31 +33,25 @@ class Rectangle:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
-        
-
-    @property
-    def height(self):
-         return self.__height
-
-    @height.setter
-    def height(self, value):
-        """Gets the height"""
-        self.__height = value
-        if not isinstance(value, int):
-            raise TypeError("value must be an integer")
-        elif value < 0:
-            raise ValueError("valu must be >= 0")
-        
     
+    def __repr__(self):
+        """
+            returns string representation of rectangle
+            representation able to be recreated into a new instance
+            using eval
+        """
+        rectangle = ''
+        if self.__width is 0 or self.__height is 0:
+            return rectangle
+        rectangle = 'Rectangle({}, {})'.format(self.__width, self.__height)
+        return rectangle
+     
+    def __del__(self):
+        """
+            prints Bye rectangle... when an instance is
+            deleted
+        """
+        print('Bye rectangle...')
+        
 
-    def area(self):
-        return (self.__height * self.__width)
-
-    def perimeter(self):
-        if self.__height == 0 or self.__width == 0:
-            return 0
-        else:
-            return 2*self.__width + 2 * self.__height
-
-
-
+  
