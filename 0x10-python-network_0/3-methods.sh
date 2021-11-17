@@ -1,3 +1,3 @@
 #!/bin/bash
 #accepts URL as argument and displays body of response
-curl -v -X OPTIONS "$1"
+curl -sX "$1" OPTIONS|grep "Allow"| cut -b 8- 
