@@ -28,9 +28,9 @@ If first name is not a string
 
 ::
 If last name is not a string 
-    >>> say_my_name(1)
+    >>> say_my_name("Millicent", 1)
     Traceback (most recent call last):
-    TypeError: first_name must be a string
+    TypeError: last_name must be a string
 
 ::
 Missing both arguments
