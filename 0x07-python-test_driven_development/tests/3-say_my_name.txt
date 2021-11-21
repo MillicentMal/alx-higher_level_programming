@@ -20,8 +20,9 @@ If both inputs are the wrong Type then the first TypeError is raised
     TypeError: first_name must be a string
 
 ::
-	>>> say_my_name("Millicent")
-	My name is Millicent
+	>>> say_my_name(None)
+	Traceback (most recent call last):
+        TypeError: first_name must be a string
 
 ::
 If first name is not a string 
