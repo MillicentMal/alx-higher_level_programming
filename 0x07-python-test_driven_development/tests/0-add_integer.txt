@@ -1,0 +1,56 @@
+===============================
+How to Use 0-add_integer.py
+===============================
+
+This library is very simple, since it only has one function called
+``add_integer``.
+``add_integer adds two integers and rejects all other data types that can not be converted to integers after addition``
+Usage
+=======
+::
+
+
+ >>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer(8)
+    106
+
+::
+Working with float inputs
+    
+>>> add_integer(8.0, 98.1)
+106
+
+::
+Negative integers can be added too
+>>> add_integer(-8, 98)
+90
+
+::
+None will be rejected
+	>>> add_integer(None, 98)
+	Traceback (most recent call last):
+    	TypeError: a must be an integer
+
+::
+String type will raise TypeError
+	>>> add_integer(8, "hello")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+::
+List type will raise TypeError
+        >>> add_integer(8, [])
+        Traceback (most recent call last):
+        TypeError: b must be an integer
+
+::
+String type will raise TypeError
+        >>> add_integer("hello")
+        Traceback (most recent call last):
+        TypeError: a must be an integer
+
+::
+String type will raise TypeError and will return TypeError for first argument
+        >>> add_integer("test", "hello")
+        Traceback (most recent call last):
+        TypeError: b must be an integer
