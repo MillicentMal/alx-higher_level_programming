@@ -1,0 +1,30 @@
+This modules shows the usage of a function ``say_my_name(first_name, last_name="")``.
+
+
+Usage
+=====
+
+``say_my_name`` prints "My name is <first_name> <last_name>".
+
+
+::
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("Millicent", "Malinga")
+    My name is Millicent Malinga
+
+
+::
+If both inputs are the wrong Type then the first TypeError is raised
+    >>> say_my_name(1, 2)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+::
+	>>> say_my_name("Millicent")
+	My name is Millicent
+
+::
+If first name is not a string 
+    >>> say_my_name(1)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
