@@ -1,6 +1,7 @@
 This modules shows the usage of a function ``say_my_name(first_name, last_name="")``.
-
-
+==============================================
+Showing the usage of all cases of the function
+==============================================
 Usage
 =====
 
