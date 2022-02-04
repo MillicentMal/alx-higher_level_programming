@@ -18,6 +18,6 @@ def text_indentation(text):
                 print()
                 print()
                 start = i + 1
-        print(text[end + 1:].strip(), end="")
+        print(text[end:].strip(), end="")
                 
     
