@@ -10,26 +10,26 @@ Usage
 
 ::
 If input is string
-    print_square = __import__('4-print_square').print_square
-    print_square("n")
+    >>> print_square = __import__('4-print_square').print_square
+    >>> print_square("n")
     Traceback (most recent call last):
     TypeError: "size must be an integer"
 
 ::
 If both input is less than 0
-    print_square(-5)
+    >>> print_square(-5)
     Traceback (most recent call last):
     ValueError: size must be >= 0
 
 ::
 If input is a float
-    print_square(3.5234)
+    >>> print_square(3.5234)
     Traceback (most recent call last):
     TypeError: size must be an integer
 
 ::
 If input is a correct type
-    print_square(3)
+    >>> print_square(3)
     ###
     ###
     ###
