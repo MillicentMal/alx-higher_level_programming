@@ -16,11 +16,11 @@ def text_indentation(text):
         start = 0
         for i in range(len(text)):
             if text[i] in delimiters:
-                print(text[start:i+1].lstrip('.:? ').strip())
+                print(text[start:i+1].lstrip('.:? ').rstrip(''))
                 print()
                 print()
                 start = i
                 new_string = text[i:]
-        print(new_string.lstrip(':.? ').strip())
+        print(new_string.lstrip(':.? ').rstrip(''))
                 
     
