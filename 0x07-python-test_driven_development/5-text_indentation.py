@@ -13,9 +13,11 @@ def text_indentation(text):
         for i in range(len(text)):
             new_string.append(text[i])
             if text[i] in delimiters:
-                print(new_string)
+                print(''.join(new_string))
+                print()
                 print()
                 new_string.clear()
             elif text[i - 1] in delimiters:
-                print(new_string)
-                new_string.clear()
+                new_string.append(text[i])
+            print(''.join(new_string))
+            new_string.clear()
