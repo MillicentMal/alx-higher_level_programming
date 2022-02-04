@@ -18,6 +18,9 @@ def text_indentation(text):
                 print()
                 print()
                 start = i + 1
-        print(text[end:].strip(), end="")
+        if text[end] in delimiters:
+            print(text[end + 1:].strip(), end="")
+        else:
+            print(text[end + 1:].strip(), end="")
                 
     
