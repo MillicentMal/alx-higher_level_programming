@@ -13,14 +13,13 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     else:
-        for i in range(len(text)):
-            if i in delimiters:
-                s = text[start:i+1] + \n\n
-                new_string.append(s)
-                start = i + 1
-            else:
-                s = text[start:]
-   for string in new_string:
-    print(string)
+        for i in range(len(strings)):
+        if strings[i] in delimiters:
+            end = i
+            print(strings[start:end+1])
+            print()
+            print()
+            start = i + 1
+    print(strings[end + 1:], end="")
                 
     
