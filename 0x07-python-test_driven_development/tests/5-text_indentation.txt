@@ -1,11 +1,11 @@
-This modules shows the usage of a function ``say_my_name(first_name, last_name="")``.
+This modules shows the usage of a function ``text_indentation(text)``.
 ==============================================
 Showing the usage of all cases of the function
 ==============================================
 Usage
 =====
 
-``".
+``prints a text with 2 new lines after each of these characters: ., ? and :".
 
 
 ::
