@@ -10,7 +10,7 @@ Usage
 
 ::
 If input is string
-    print_square = __import__('4-print_square').print_square
+    __import__('4-print_square').print_square
     >>> print_square("n")
     Traceback (most recent call last):
     TypeError: "size must be an integer"
