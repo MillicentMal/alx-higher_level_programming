@@ -11,14 +11,16 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     else:
-        for i in range(len(text)):
-            if text[i] in delimiters:
-                end = i
-                print(text[start:end+1].strip())
-                print()
-                print()
-                start = i + 1
-        if text[end] in delimiters:
-            print(text[end:].strip(text[end]).strip(), end="")
+    delimiters = ['.', '?', ':']
+    new_string = text
+    start = 0
+    for i in range(len(text)):
+        if text[i] in delimiters:
+            print(text[start:i+1].lstrip('.:?').strip())
+            print()
+            print()
+            start = i
+            new_string = text[i:]
+    print(new_string.lstrip(':.?'))
                 
     
