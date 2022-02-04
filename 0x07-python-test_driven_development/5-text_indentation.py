@@ -21,6 +21,6 @@ def text_indentation(text):
                 print()
                 start = i
                 new_string = text[i:]
-        print(new_string.lstrip(':.? '))
+        print(new_string.lstrip(':.? ').strip())
                 
     
