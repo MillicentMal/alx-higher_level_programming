@@ -16,9 +16,9 @@ def text_indentation(text):
         start = 0
         for i in range(len(text)):
             if text[i] in delimiters:
-                print(text[start:i+1].lstrip('.:? ').rstrip() + '\n\n')
+                print(text[start:i+1].lstrip('.:? ').rstrip('\n') + '\n\n')
                 start = i
                 new_string = text[i:]
-        print(new_string.lstrip(':.? ').rstrip(''))
+        print(new_string.lstrip(':.? ').rstrip('\n'))
                 
     
