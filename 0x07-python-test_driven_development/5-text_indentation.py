@@ -5,9 +5,6 @@ def text_indentation(text):
     """
     prints a text with 2 new lines after each of these characters: ., ? and :
     """
-    
-    new_string = [text[:]]
-    print(new_string)
     start = 0
     delimiters = ['.', '?', ':']
     if not isinstance(text, str):
