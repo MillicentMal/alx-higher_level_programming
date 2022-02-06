@@ -7,18 +7,25 @@ def text_indentation(text):
     """
     prints a text with 2 new lines after each of these characters: ., ? and :
     """
-    start = 0
+    stringList = []
     delimiters = ['.', '?', ':']
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     else:
-        new_string = text
-        start = 0
-        for i in range(len(text)):
-            if text[i] in delimiters:
-                print(text[start:i+1].lstrip('.:? ').rstrip('\n') + '\n\n')
-                start = i
-                new_string = text[i:]
-        print(new_string.lstrip(':.? ').rstrip('\n'))
-                
+        for string in text:
+            if string in delimiters:
+                stringList.append(string)
+                stringList.append('\n\n')
+            elif string == '\n':
+                pass
+            else:
+                stringList.append(string.lstrip('\n'))
     
+    stringList = ''.join(stringList)
+    
+    print(stringList.strip())
+    
+
+text_indentation("Holberton School")
+
+
