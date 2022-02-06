@@ -3,6 +3,9 @@
 text Indentation
 """
 
+from matplotlib.pyplot import text
+
+
 def text_indentation(text):
     """
     prints a text with 2 new lines after each of these characters: ., ? and :
@@ -14,15 +17,15 @@ def text_indentation(text):
     else:
         for string in text:
             if string in delimiters:
-                stringList.append(string)
-                stringList.append('\n\n')
-            elif string == '\n':
-                pass
+                stringList.append(string + '\n\n')
             else:
-                stringList.append(string.lstrip('\n'))
+                stringList.append(string)
     
-    stringList = ''.join(stringList)
-    return stringList
+        stringList = ''.join(stringList)
+    print(stringList)
+
+
+
 
 
 
