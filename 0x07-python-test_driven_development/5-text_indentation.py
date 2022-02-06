@@ -3,8 +3,6 @@
 text Indentation
 """
 
-from matplotlib.pyplot import text
-
 
 def text_indentation(text):
     """
