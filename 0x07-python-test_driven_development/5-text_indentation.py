@@ -17,7 +17,7 @@ def text_indentation(text):
             if string in delimiters:
                 stringList.append(string + '\n\n')
             else:
-                stringList.append(string.strip())
+                stringList.append(string.lstrip().rstrip())
     
         stringList = ''.join(stringList)
     print(stringList)
