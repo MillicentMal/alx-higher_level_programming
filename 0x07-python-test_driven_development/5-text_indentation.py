@@ -22,10 +22,7 @@ def text_indentation(text):
                 stringList.append(string.lstrip('\n'))
     
     stringList = ''.join(stringList)
-    
-    print(stringList.strip())
-    
+    return stringList
 
-text_indentation("Holberton School")
 
 
