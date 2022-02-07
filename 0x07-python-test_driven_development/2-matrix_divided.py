@@ -1,6 +1,18 @@
 #!/usr/bin/python3
+"""
+    Matrix division 
+    """
 
 def matrix_divided(matrix, div):
+    """[summary]
+
+    Args:
+        matrix (List): of integers and floats 
+        div (int / float): the number to divide matrix with
+
+    Returns:
+        new list of lists
+    """
     list_length = []
     for i in range(len(matrix)):
         list_length.append(len(matrix[i]))
