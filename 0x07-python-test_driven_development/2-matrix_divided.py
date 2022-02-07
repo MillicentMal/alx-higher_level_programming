@@ -23,10 +23,10 @@ def matrix_divided(matrix, div):
         for num in matrix[i]:
             if not isinstance(num, int) and not isinstance(num, float):
                 raise TypeError(
-                    "matrix must be a matrix (list of lists) of integers/floats")
+                "matrix must be a matrix (list of lists) of integers/floats")
             elif not isinstance(matrix[i], list):
                 raise TypeError(
-                    "matrix must be a matrix (list of lists) of integers/floats")
+                "matrix must be a matrix (list of lists) of integers/floats")
     if len(set(list_length)) > 1:
         raise TypeError("Each row of the matrix must have the same size")
     elif div == 0:
