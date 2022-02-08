@@ -9,4 +9,7 @@ def read_file(filename=""):
     """
     
     with open(filename, 'r') as textfile:
-        return textfile.read()
+        print(textfile.read())
+
+
+read_file("my_file_0.txt")
