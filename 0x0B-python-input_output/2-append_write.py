@@ -9,5 +9,5 @@ def write_file(filename="", text=""):
     function that writes to a text file (UTF8) and prints it to stdout
     """
 
-    with open(filename, mode='w', encoding='UTF-8') as textfile:
+    with open(filename, mode='a', encoding='UTF-8') as textfile:
         return textfile.write(text)
