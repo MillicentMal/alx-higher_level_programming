@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Reading file using with
+    appending to file using with
 """
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """
-    function that writes to a text file (UTF8) and prints it to stdout
+    function that appends to a text file (UTF8) and prints it to stdout
     """
 
     with open(filename, mode='a', encoding='UTF-8') as textfile:
