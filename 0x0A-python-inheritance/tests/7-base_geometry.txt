@@ -10,7 +10,7 @@ This modue defines class BaseGeometry
 >>> isinstance(bg, BaseGeometry)
 True
 >>> bg.integer_validator("my_int", 12)
->>> 12
+12
 
 ::
 Testing integer_validator with non-integers
