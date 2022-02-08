@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+""" 
+MyList class
+"""
+
+
 class MyList(list):
     """
     inherits from list object
