@@ -11,5 +11,3 @@ def read_file(filename=""):
     with open(filename, 'r') as textfile:
         print(textfile.read())
 
-
-read_file("my_file_0.txt")
