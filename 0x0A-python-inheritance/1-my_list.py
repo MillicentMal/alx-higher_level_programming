@@ -12,7 +12,7 @@ class MyList(list):
         self.obj = list()
     
     def print_sorted(self):
-        return self.sort()
+        print(sorted(self))
     
-    def __repr__(self) -> str:
-        return super().__repr__()
+
+
