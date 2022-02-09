@@ -17,5 +17,5 @@ def append_after(filename="", search_string="", new_string=""):
     with open(filename, "w") as write_file:
         write_file.write(text)
 
+
 append_after("append_after_100.txt", "Python", "\"C is fun!\"\n")
-        
