@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" 
+contains the Base class and its methods
+"""
 
 class Base:
     """ 
