@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" 
+write to json file
+"""
 
 import json
 
