@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 saving data to json file
 """
 
@@ -7,7 +7,7 @@ import json
 
 
 def save_to_json_file(my_obj, filename):
-    """ 
+    """
     writing to json file
     """
 

@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """ converting class to json """
 
