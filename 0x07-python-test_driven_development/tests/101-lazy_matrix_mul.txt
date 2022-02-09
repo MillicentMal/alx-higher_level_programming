@@ -1,0 +1,9 @@
+This modules shows the usage of a function ``print_square(size)``.
+==============================================
+Showing the usage of all cases of the function
+==============================================
+Usage
+=====
+
+`` function that prints a square with the character "#".
+
