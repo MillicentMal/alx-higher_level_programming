@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ 
-write to json file
+saving data to json file
 """
 
 import json
