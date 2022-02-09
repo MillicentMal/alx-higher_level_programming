@@ -1,9 +1,22 @@
-This modules shows the usage of a function ``print_square(size)``.
+This modules shows the usage of a function ``lazy_matrix(m_a, m_b)``.
 ==============================================
 Showing the usage of all cases of the function
 ==============================================
 Usage
 =====
 
-`` function that prints a square with the character "#".
+`` that multiplies 2 matrices by using the module NumPy
+
+>>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+array([[ 7, 10],
+       [15, 22]])
+
+
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[]])             
+'Failed to multiply'
+
+
+>>> lazy_matrix_mul([[]], [[]])             
+'Failed to multiply'
 
