@@ -1,0 +1,22 @@
+This modules shows the usage of a function ``lazy_matrix(m_a, m_b)``.
+==============================================
+Showing the usage of all cases of the function
+==============================================
+Usage
+=====
+
+`` that multiplies 2 matrices by using the module NumPy
+
+>>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+array([[ 7, 10],
+       [15, 22]])
+
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[]])
+Traceback (most recent call last):
+ValueError: each row of m_a must be of the same size or each row of m_b must be of the same size
+
+
+>>> lazy_matrix_mul(ma, mb)                 
+Traceback (most recent call last):
+TypeError: m_a must be a list or m_b must be a list
